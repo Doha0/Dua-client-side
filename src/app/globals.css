@@ -67,5 +67,5 @@
   @apply bg-[#ebeef2] z-0 lg:fixed xl:p-6 xl:pb-0 2xl:px-10 2xl:pt-6;
 }
 .home-layout{
-  @apply grid grid-cols-4 justify-center items-center;
+  @apply grid grid-cols-4 gap-6 justify-center items-center;
 }
