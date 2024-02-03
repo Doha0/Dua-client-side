@@ -48,7 +48,7 @@ const DuaCard = () => {
           <div>
             <Image src={audio} />
           </div>
-          <div className="flex gap-x-10">
+          <div className="flex items-center gap-x-10">
             <Image src={copy} />
             <Image src={bookmark} />
             <Image src={memorize} />
