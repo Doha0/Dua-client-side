@@ -13,7 +13,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <section className="bg-background w-28 shadow-md rounded-sm flex justify-center items-center">
+    <section className="w-[6rem] col-span-1 bg-background shadow-md rounded-sm flex justify-center items-center">
       <div className="flex flex-col justify-between items-center gap-y-5 py-16">
         <div className="pb-6">
           <Image src={logo} className="w-20 h-20" />

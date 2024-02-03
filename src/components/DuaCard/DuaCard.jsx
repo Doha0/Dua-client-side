@@ -18,7 +18,7 @@ import Image from "next/image";
 
 const DuaCard = () => {
   return (
-    <section>
+    <section className="w-[54rem] col-span-5">
       <Card>
         <CardHeader className="flex flex-row mb-2">
           <Image src={frame} />

@@ -25,7 +25,7 @@ import SubCategoryCard from "../SubCategoryCard/SubCategoryCard";
 
 const CategoryCard = () => {
   return (
-    <section className="h-[85.5vh] lg:h-[74vh] w-[350px] bg-white hidden lg:block rounded-md">
+    <section className="w-[24rem] col-span-3 h-[85.5vh] lg:h-[74vh] bg-white hidden lg:block rounded-md">
       <Card className="rounded-md">
         <CardHeader className="bg-primary mx-auto font-semibold text-white text-center py-5 rounded-t-md">
           <h3>categories</h3>
