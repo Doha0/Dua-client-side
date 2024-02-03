@@ -1,29 +1,20 @@
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+
 // images
 import searchIcon from "@/assets/icons/search.png";
 import feverIcon from "@/assets/icons/fever.png";
 
 import Image from "next/image";
 import SubCategoryCard from "../SubCategoryCard/SubCategoryCard";
+import data from "@/api/data";
+// import { useEffect, useState } from "react";
 
-const CategoryCard = () => {
+export default async function CategoryCard() {
+  const allDua = await data();
+
+  console.log(allDua);
+
   return (
     <section className="w-[24rem] col-span-3 h-[85.5vh] lg:h-[74vh] bg-white hidden lg:block rounded-md">
       <Card className="rounded-md">
@@ -59,6 +50,4 @@ const CategoryCard = () => {
       </Card>
     </section>
   );
-};
-
-export default CategoryCard;
+}
